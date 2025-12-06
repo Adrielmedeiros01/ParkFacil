@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <title>ParkFácil</title>
+</head>
+<body>
+    <header>
+        <h1>ParkFácil - Estacionamentos</h1>
+    </header>
+    <main>
+        <section>
+            <ul>
+                <li><strong>Carro</strong> = 2h  (R$10,00) + (R$3,00 por hora) adicional.</li>
+                <br>
+                <li><strong>Moto</strong> = 2h (R$8,00) + (R$2,00 por hora) adicional.</li>
+            </ul>    
+        </section>
+        <br>
+        <form action="">
+            <label for="">Informe o tipo de Veículo: </label>
+            <select name="veiculo" id="veiculo">
+                <option value="c">Carro</option>
+                <option value="m">Moto</option>
+            </select>
+            <br><br>
+            <label for="tempo">Tempo de estacionamento:</label>
+            <select name="hrs" id="hrs">
+                <option value="1">1h</option>
+                <option value="2">2h</option>
+                <option value="3">3h</option>
+                <option value="4">4h</option>
+                <option value="5">5h</option>
+                <option value="6">6h</option>
+                <option value="7">7h</option>
+                <option value="8">8h</option>
+                <option value="9">9h</option>
+                <option value="10">10h</option>
+            </select>
+            <br><br>
+            <label for="mensal">Mensalista:</label>
+            <select name="mensal" id="mensal">
+                <option value="n">Não</option>
+                <option value="s">Sim</option>
+            </select>
+            <br><br>
+            <button onclick="processar()" name="btm" type="button">Processar cobrança</button>
+        </form>
+
+        <section>
+            <p id="result"></p>
+        </section>
+
+    </main>
+    <br>
+    <footer>
+        <strong>Copy@</strong>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!--
+Projeto 2: o seu outro cliente é empresa de estacionamento ParkFácil, que deseja que você desenvolva um sistema simples de cálculo de cobrança a ser utilizado pelos atendentes no dia a dia.
+
+O sistema deve permitir que o funcionário informe o tipo de veículo (carro ou moto) e a quantidade de horas estacionadas.
+
+Com base nessas informações, o site deve calcular automaticamente o valor total a pagar, seguindo regras específicas: para carros, deve-se cobrar R$ 10,00 pelos primeiros 2 horas e acrescentar R$ 3,00 por hora adicional; 
+
+
+para motos, deve-se cobrar R$ 8,00 pelos primeiros 2 horas e acrescentar R$ 2,00 por hora extra.
+
+
+Caso o cliente seja mensalista, o sistema deve aplicar automaticamente um desconto de 10% sobre o valor final.
+
+
+Também é necessário tratar erros comuns, como a entrada de valores menores ou iguais a zero para a quantidade de horas, exibindo uma mensagem apropriada ao usuário.
+-->
