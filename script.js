@@ -3,7 +3,7 @@ function processar(){
     if(veiculo == "c"){
         carro();
     }
-    else if("m") {
+    else if(veiculo == "m") {
         moto();
     }
 }
