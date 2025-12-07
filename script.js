@@ -6,6 +6,7 @@ function processar(){
     else if("m") {
         moto();
     }
+    document.getElementById("result").style.display = "block";     
 }
 
 function carro(){
