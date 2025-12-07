@@ -12,7 +12,7 @@
         <h1>ParkFácil - Estacionamentos</h1>
     </header>
     <main>
-        <section>
+        <section class="info">
             <ul>
                 <li><strong>Carro</strong> = 2h  (R$10,00) + (R$3,00 por hora) adicional.</li>
                 <br>
@@ -47,13 +47,15 @@
                 <option value="s">Sim</option>
             </select>
             <br><br>
-            <button onclick="processar()" name="btm" type="button">Processar cobrança</button>
+            <div id="btm">
+                <button onclick="processar()" name="btm" type="button">Processar cobrança</button>
+            </div>
         </form>
-
+        <br><br>
         <section>
             <p id="result"></p>
         </section>
-
+        <br><br>
     </main>
     <br>
     <footer>
